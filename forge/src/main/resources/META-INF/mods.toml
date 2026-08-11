@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+
+[[mods]]
+modId = "globalserverconfig"
+version = "${mod_version}"
+displayName = "Global Server Config"
+authors = "foxxiv"
+description = '''Globalize Forge server configs across all worlds. Redirects server config loading to config/serverconfig/.'''
+
+[[dependencies.globalserverconfig]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,48)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.globalserverconfig]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.globalserverconfig]]
+modId = "cloth_config"
+mandatory = true
+versionRange = "[11,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.globalserverconfig]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9,)"
+ordering = "AFTER"
+side = "BOTH"

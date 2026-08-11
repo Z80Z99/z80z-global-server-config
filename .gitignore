@@ -1,0 +1,32 @@
+# Gradle build output
+build/
+**/build/
+
+# Gradle cache
+.gradle/
+**/.gradle/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local run environment (contains test saves, configs, logs)
+run/
+**/run/
+
+# Logs
+*.log
+
+# JVM args
+hs_err_pid*.log
+replay_pid*.log

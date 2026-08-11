@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "globalserverconfig",
+	"version": "${version}",
+	"name": "Global Server Config",
+	"description": "Globalize Forge server configs across all worlds. Forge-only on Fabric.",
+	"authors": ["foxxiv"],
+	"contact": {},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.foxxiv.globalserverconfig.fabric.GlobalServerConfigFabric"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.1",
+		"java": ">=17"
+	}
+}

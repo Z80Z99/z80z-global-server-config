@@ -1,0 +1,12 @@
+{
+  "text.autoconfig.globalserverconfig.title": "全局服务端配置设置",
+  "text.autoconfig.globalserverconfig.category.general": "通用",
+  "text.autoconfig.globalserverconfig.option.enabled": "启用全局重定向",
+  "text.autoconfig.globalserverconfig.option.enabled.tooltip": "将服务端配置重定向到 config/serverconfig/。修改后需重启游戏生效。",
+  "text.autoconfig.globalserverconfig.option.migrationEnabled": "启用首次启动迁移",
+  "text.autoconfig.globalserverconfig.option.migrationEnabled.tooltip": "世界启动时将 saves/<世界>/serverconfig/*.toml 复制到 config/serverconfig/。",
+  "text.autoconfig.globalserverconfig.option.targetSubDir": "目标子目录名",
+  "text.autoconfig.globalserverconfig.option.targetSubDir.tooltip": "config/ 下存放全局化服务端配置的子目录。修改后需重启游戏生效。",
+  "text.autoconfig.globalserverconfig.option.excludedModIds": "排除的模组 ID",
+  "text.autoconfig.globalserverconfig.option.excludedModIds.tooltip": "这些模组的服务端配置保持每个世界独立。修改后需重启游戏生效。"
+}
