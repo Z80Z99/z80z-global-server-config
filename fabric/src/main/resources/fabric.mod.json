@@ -3,9 +3,12 @@
 	"id": "globalserverconfig",
 	"version": "${version}",
 	"name": "Global Server Config",
-	"description": "Globalize Forge server configs across all worlds. Forge-only on Fabric.",
-	"authors": ["foxxiv"],
-	"contact": {},
+	"description": "Unsupported placeholder build. This mod only works on Forge; use the Forge jar from the Releases page.",
+	"authors": ["Z80Z99"],
+	"contact": {
+		"homepage": "https://github.com/Z80Z99/z80z-globalserverconfig",
+		"sources": "https://github.com/Z80Z99/z80z-globalserverconfig"
+	},
 	"license": "MIT",
 	"environment": "*",
 	"entrypoints": {

@@ -6,7 +6,7 @@ license = "MIT"
 modId = "globalserverconfig"
 version = "${mod_version}"
 displayName = "Global Server Config"
-authors = "foxxiv"
+authors = "Z80Z99"
 description = '''Globalize Forge server configs across all worlds. Redirects server config loading to config/serverconfig/.'''
 
 [[dependencies.globalserverconfig]]

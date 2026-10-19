@@ -59,11 +59,11 @@ jar {
 	manifest {
 		attributes([
 			'Specification-Title'     : 'Global Server Config',
-			'Specification-Vendor'    : 'foxxiv',
+			'Specification-Vendor'    : 'Z80Z99',
 			'Specification-Version'   : '1',
 			'Implementation-Title'    : project.name,
 			'Implementation-Version'  : project.version,
-			'Implementation-Vendor'   : 'foxxiv'
+			'Implementation-Vendor'   : 'Z80Z99'
 		])
 	}
 }
@@ -86,7 +86,7 @@ tasks.named('processResources', ProcessResources).configure {
 		mod_id: 'globalserverconfig',
 		mod_name: 'Global Server Config',
 		mod_version: project.version,
-		mod_authors: 'foxxiv',
+		mod_authors: 'Z80Z99',
 		mod_description: 'Globalize Forge server configs across all worlds'
 	]
 
