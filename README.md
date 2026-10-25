@@ -1,5 +1,10 @@
 # GlobalServerConfig
 
+![Release](https://img.shields.io/github/v/release/Z80Z99/z80z-globalserverconfig)
+![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-brightgreen)
+![Forge](https://img.shields.io/badge/Forge-47.x-orange)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
 A Minecraft Forge 1.20.1 mod that stores Forge server configs in one global directory instead of per-world `serverconfig` folders, so every world shares the same settings.
 
 Minecraft 1.20.1 · Forge 47.x · Java 17 · Client and server
@@ -39,6 +44,12 @@ Forge 版已通过 jar-in-jar 内置 Cloth Config 11.1.106 和 Architectury 9.2.
 *   `migrationEnabled`: 启用首次启动时的自动迁移功能。
 *   `targetSubDir`: 全局配置的子目录名，默认为 `serverconfig`。
 *   `excludedModIds`: 排除的模组 ID 列表，列表中的模组配置将保持在每个存档中独立。
+
+## 注意事项
+
+*   **全局基准的来源**：迁移遵循"目标文件已存在则跳过"，因此第一个启动的存档会把自己的 serverconfig 带入全局目录成为基准；之后所有世界读取的都是这份全局配置。
+*   **生效时机**：全局 server config 在进入世界时加载。Forge 自带配置文件监听，世界运行中修改 `.toml` 通常可热重载；不支持热重载的模组需要重新进入世界。
+*   **回退方式**：在配置界面关闭 `enabled`，或将对应模组 ID 加入 `excludedModIds`（需重启游戏生效），即可恢复该模组每存档独立的 serverconfig。
 
 ## 从源码构建
 
