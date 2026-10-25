@@ -53,7 +53,7 @@ dependencyResolutionManagement {
 		}
 	}
 }
-rootProject.name = 'globalserverconfig'
+rootProject.name = 'z80z-global-server-config'
 // 包含子项目
 include 'common'
 include 'fabric'

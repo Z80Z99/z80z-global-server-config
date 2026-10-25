@@ -93,7 +93,7 @@ sourceSets {
 	main {
 		java {}
 		resources {
-			exclude 'assets/globalserverconfig/lang/*.json'
+			exclude 'assets/z80z_global_server_config/lang/*.json'
 			exclude 'pack.mcmeta'
 		}
 	}

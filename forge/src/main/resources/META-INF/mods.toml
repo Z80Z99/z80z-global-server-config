@@ -3,34 +3,34 @@ loaderVersion = "[47,)"
 license = "MIT"
 
 [[mods]]
-modId = "globalserverconfig"
+modId = "z80z_global_server_config"
 version = "${mod_version}"
-displayName = "Global Server Config"
+displayName = "Z80Z Global Server Config"
 authors = "Z80Z99"
 description = '''Globalize Forge server configs across all worlds. Redirects server config loading to config/serverconfig/.'''
 
-[[dependencies.globalserverconfig]]
+[[dependencies.z80z_global_server_config]]
 modId = "forge"
 mandatory = true
 versionRange = "[47,48)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.globalserverconfig]]
+[[dependencies.z80z_global_server_config]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.20.1,1.21)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.globalserverconfig]]
+[[dependencies.z80z_global_server_config]]
 modId = "cloth_config"
 mandatory = true
 versionRange = "[11,)"
 ordering = "AFTER"
 side = "BOTH"
 
-[[dependencies.globalserverconfig]]
+[[dependencies.z80z_global_server_config]]
 modId = "architectury"
 mandatory = true
 versionRange = "[9,)"

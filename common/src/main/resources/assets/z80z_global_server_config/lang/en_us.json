@@ -1,0 +1,12 @@
+{
+  "text.autoconfig.z80z_global_server_config.title": "Global Server Config Settings",
+  "text.autoconfig.z80z_global_server_config.category.general": "General",
+  "text.autoconfig.z80z_global_server_config.option.enabled": "Enable Global Redirection",
+  "text.autoconfig.z80z_global_server_config.option.enabled.tooltip": "Redirect server configs to config/serverconfig/. Changes require game restart.",
+  "text.autoconfig.z80z_global_server_config.option.migrationEnabled": "Enable First-Run Migration",
+  "text.autoconfig.z80z_global_server_config.option.migrationEnabled.tooltip": "Copy existing saves/<world>/serverconfig/*.toml to config/serverconfig/ on world start.",
+  "text.autoconfig.z80z_global_server_config.option.targetSubDir": "Target Sub Directory",
+  "text.autoconfig.z80z_global_server_config.option.targetSubDir.tooltip": "Subdirectory under config/ to store globalized server configs. Changes require game restart.",
+  "text.autoconfig.z80z_global_server_config.option.excludedModIds": "Excluded Mod IDs",
+  "text.autoconfig.z80z_global_server_config.option.excludedModIds.tooltip": "These mods' server configs stay per-world. Changes require game restart."
+}

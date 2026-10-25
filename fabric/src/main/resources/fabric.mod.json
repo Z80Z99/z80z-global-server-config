@@ -1,19 +1,19 @@
 {
 	"schemaVersion": 1,
-	"id": "globalserverconfig",
+	"id": "z80z_global_server_config",
 	"version": "${version}",
-	"name": "Global Server Config",
+	"name": "Z80Z Global Server Config",
 	"description": "Unsupported placeholder build. This mod only works on Forge; use the Forge jar from the Releases page.",
 	"authors": ["Z80Z99"],
 	"contact": {
-		"homepage": "https://github.com/Z80Z99/z80z-globalserverconfig",
-		"sources": "https://github.com/Z80Z99/z80z-globalserverconfig"
+		"homepage": "https://github.com/Z80Z99/z80z-global-server-config",
+		"sources": "https://github.com/Z80Z99/z80z-global-server-config"
 	},
 	"license": "MIT",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.foxxiv.globalserverconfig.fabric.GlobalServerConfigFabric"
+			"com.github.z80z.globalserverconfig.fabric.GlobalServerConfigFabric"
 		]
 	},
 	"depends": {

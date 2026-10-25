@@ -1,6 +1,6 @@
-# GlobalServerConfig
+# Z80Z Global Server Config
 
-![Release](https://img.shields.io/github/v/release/Z80Z99/z80z-globalserverconfig)
+![Release](https://img.shields.io/github/v/release/Z80Z99/z80z-global-server-config)
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-brightgreen)
 ![Forge](https://img.shields.io/badge/Forge-47.x-orange)
 ![License](https://img.shields.io/badge/License-MIT-blue)
@@ -29,7 +29,7 @@ Minecraft 1.20.1 · Forge 47.x · Java 17 · Client & server | 客户端与服�
 ### 安装
 
 1.  安装 [Minecraft Forge 1.20.1 47.x](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html)。
-2.  从 [Releases](https://github.com/Z80Z99/z80z-globalserverconfig/releases) 下载最新 `globalserverconfig-forge-<版本>-1.20.1.jar`，放入 `mods` 文件夹。
+2.  从 [Releases](https://github.com/Z80Z99/z80z-global-server-config/releases) 下载最新 `z80z-global-server-config-forge-<版本>-1.20.1.jar`，放入 `mods` 文件夹。
 3.  启动游戏。
 
 Forge 版已通过 jar-in-jar 内置 Cloth Config 11.1.106 和 Architectury 9.2.14，无需另外下载这两个前置。
@@ -39,12 +39,12 @@ Forge 版已通过 jar-in-jar 内置 Cloth Config 11.1.106 和 Architectury 9.2.
 ### 使用
 
 1.  在主菜单点击 **Mods**。
-2.  找到 **Global Server Config** 并点击 **Config** 按钮。
+2.  找到 **Z80Z Global Server Config** 并点击 **Config** 按钮。
 3.  调整设置并保存。
 
 ### 配置说明
 
-模组的配置文件位于 `config/globalserverconfig.json`，也可通过游戏内配置界面修改。
+模组的配置文件位于 `config/z80z_global_server_config.json`，也可通过游戏内配置界面修改。
 
 *   `enabled`: 启用/禁用全局重定向功能。
 *   `migrationEnabled`: 启用首次启动时的自动迁移功能。
@@ -56,17 +56,18 @@ Forge 版已通过 jar-in-jar 内置 Cloth Config 11.1.106 和 Architectury 9.2.
 *   **全局基准的来源**：迁移遵循"目标文件已存在则跳过"，因此第一个启动的存档会把自己的 serverconfig 带入全局目录成为基准；之后所有世界读取的都是这份全局配置。
 *   **生效时机**：全局 server config 在进入世界时加载。Forge 自带配置文件监听，世界运行中修改 `.toml` 通常可热重载；不支持热重载的模组需要重新进入世界。
 *   **回退方式**：在配置界面关闭 `enabled`，或将对应模组 ID 加入 `excludedModIds`（需重启游戏生效），即可恢复该模组每存档独立的 serverconfig。
+*   **从 v1.0.0 升级**：v1.1.0 起模组 ID 由 `globalserverconfig` 更名为 `z80z_global_server_config`。旧配置文件 `config/globalserverconfig.json` 不再被读取，如需保留设置请手动将其重命名为 `config/z80z_global_server_config.json`。
 
 ### 从源码构建
 
 需要 JDK 17。
 
-1.  克隆仓库：`git clone https://github.com/Z80Z99/z80z-globalserverconfig.git`
-2.  进入目录：`cd z80z-globalserverconfig`
+1.  克隆仓库：`git clone https://github.com/Z80Z99/z80z-global-server-config.git`
+2.  进入目录：`cd z80z-global-server-config`
 3.  运行构建：
     *   Windows: `.\gradlew.bat :forge:build`
     *   Linux/macOS: `./gradlew :forge:build`
-4.  产物位置：`forge/build/libs/globalserverconfig-forge-<版本>-1.20.1.jar`
+4.  产物位置：`forge/build/libs/z80z-global-server-config-forge-<版本>-1.20.1.jar`
 
 ### 技术栈
 
@@ -96,7 +97,7 @@ Through Mixin, this mod redirects mod config files that Forge would normally sto
 ### Installation
 
 1.  Install [Minecraft Forge 1.20.1 47.x](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html).
-2.  Download the latest `globalserverconfig-forge-<version>-1.20.1.jar` from [Releases](https://github.com/Z80Z99/z80z-globalserverconfig/releases) and drop it into your `mods` folder.
+2.  Download the latest `z80z-global-server-config-forge-<version>-1.20.1.jar` from [Releases](https://github.com/Z80Z99/z80z-global-server-config/releases) and drop it into your `mods` folder.
 3.  Launch the game.
 
 The Forge build bundles Cloth Config 11.1.106 and Architectury 9.2.14 via jar-in-jar — no extra downloads needed.
@@ -106,12 +107,12 @@ The Forge build bundles Cloth Config 11.1.106 and Architectury 9.2.14 via jar-in
 ### Usage
 
 1.  Click **Mods** on the main menu.
-2.  Find **Global Server Config** and click **Config**.
+2.  Find **Z80Z Global Server Config** and click **Config**.
 3.  Adjust the settings and save.
 
 ### Configuration
 
-The mod's own config lives at `config/globalserverconfig.json`; every option is also editable in game:
+The mod's own config lives at `config/z80z_global_server_config.json`; every option is also editable in game:
 
 *   `enabled`: enable/disable global redirection.
 *   `migrationEnabled`: enable the one-time migration of old per-world configs.
@@ -123,17 +124,18 @@ The mod's own config lives at `config/globalserverconfig.json`; every option is 
 *   **Where the baseline comes from**: migration never overwrites existing files, so the first world you launch donates its configs to the global directory; every world (including that one) reads the global copy afterwards.
 *   **When changes apply**: global server configs load when a world starts. Forge ships a config file watcher, so editing a `.toml` mid-game usually hot-reloads; mods without reload support need a world re-entry.
 *   **Rollback**: turn off `enabled`, or add the mod ID to `excludedModIds` (restart required), to restore per-world server configs for that mod.
+*   **Upgrading from v1.0.0**: the mod ID was renamed from `globalserverconfig` to `z80z_global_server_config` in v1.1.0. The old `config/globalserverconfig.json` is no longer read — rename it to `config/z80z_global_server_config.json` manually to keep your settings.
 
 ### Building from source
 
 Requires JDK 17.
 
-1.  Clone the repository: `git clone https://github.com/Z80Z99/z80z-globalserverconfig.git`
-2.  Enter the directory: `cd z80z-globalserverconfig`
+1.  Clone the repository: `git clone https://github.com/Z80Z99/z80z-global-server-config.git`
+2.  Enter the directory: `cd z80z-global-server-config`
 3.  Build:
     *   Windows: `.\gradlew.bat :forge:build`
     *   Linux/macOS: `./gradlew :forge:build`
-4.  Output: `forge/build/libs/globalserverconfig-forge-<version>-1.20.1.jar`
+4.  Output: `forge/build/libs/z80z-global-server-config-forge-<version>-1.20.1.jar`
 
 ### Tech stack
 

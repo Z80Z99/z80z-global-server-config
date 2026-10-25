@@ -9,10 +9,10 @@ architectury {
 
 loom {
 	mixin {
-		defaultRefmapName = 'globalserverconfig.forge.refmap.json'
+		defaultRefmapName = 'z80z_global_server_config.forge.refmap.json'
 	}
 	forge {
-		mixinConfig "globalserverconfig.forge.mixins.json"
+		mixinConfig "z80z_global_server_config.forge.mixins.json"
 	}
 	runs {
 		client {
@@ -83,8 +83,8 @@ tasks.named('processResources', ProcessResources).configure {
 		forge_version: project.forge_version,
 		forge_version_range: '[47,48)',
 		loader_version_range: '[47,)',
-		mod_id: 'globalserverconfig',
-		mod_name: 'Global Server Config',
+		mod_id: 'z80z_global_server_config',
+		mod_name: 'Z80Z Global Server Config',
 		mod_version: project.version,
 		mod_authors: 'Z80Z99',
 		mod_description: 'Globalize Forge server configs across all worlds'
@@ -127,7 +127,7 @@ sourceSets {
 	main {
 		java {}
 		resources {
-			exclude 'assets/globalserverconfig/lang/*.json'
+			exclude 'assets/z80z_global_server_config/lang/*.json'
 		}
 	}
 }
